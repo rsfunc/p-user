@@ -7,3 +7,9 @@ edition = "2021"
 path = "src/main.rs"
 name = "p-user"
 
+[dependencies]
+p-common = { git = "https://github.com/rsfunc/p-common.git" }
+
+# you should disable on check in
+# [patch."https://github.com/rsfunc/p-common.git"]
+# p-common = { path = "../p-common" }

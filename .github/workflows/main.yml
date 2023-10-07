@@ -1,0 +1,15 @@
+# based on: 
+# https://ectobit.com/blog/speed-up-github-actions-rust-pipelines/
+name: Rust
+
+# note if you use act, use for example catthehacker/ubuntu:rust-22.04 as image
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  call-workflow-in-another-repo:
+    uses: rsfunc/p-scripts/.github/workflows/build-rust.yml@main

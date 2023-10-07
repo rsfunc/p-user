@@ -1,3 +1,3 @@
 fn main() {
-    printt!("Hello world!")
+    println!("Hello world from me and '{}'!", p_common::prefix())
 }
