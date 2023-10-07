@@ -13,3 +13,6 @@ on:
 jobs:
   call-workflow-in-another-repo:
     uses: rsfunc/p-scripts/.github/workflows/build-rust.yml@main
+    with:
+      standalone: true
+
