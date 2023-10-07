@@ -1,3 +1,4 @@
-fn main() {
-    println!("Hello world from me and '{}'!", p_common::prefix())
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    p_user::startup::run().await
 }

@@ -9,7 +9,10 @@ name = "p-user"
 
 [dependencies]
 p-common = { git = "https://github.com/rsfunc/p-common.git" }
+p-web = { git = "https://github.com/rsfunc/p-web.git" }
+actix-web = "4.4.0"
+serde={ version = "1.0.188", features = ["derive"] }
 
 # you should disable on check in
-# [patch."https://github.com/rsfunc/p-common.git"]
-# p-common = { path = "../p-common" }
+[patch."https://github.com/rsfunc/p-web.git"]
+p-web = { path = "../p-web" }
